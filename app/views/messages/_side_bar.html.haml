@@ -1,0 +1,18 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        ログインユーザー名
+      .side-header__box__icons
+        = link_to "#", class: "icon" do
+          = icon('fas', 'edit')
+        = link_to "#", class: "icon" do
+          = icon('fas', 'user-cog')
+
+  .groups
+    .group
+      = link_to "#" do
+        .group__name
+          グループ名
+        .group__new-message
+          最後のメッセージ
